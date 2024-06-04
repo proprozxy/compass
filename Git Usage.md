@@ -64,3 +64,11 @@ git push --force
 `--mixed` (default) roll back to the last commit, retaining changes in the working directory, but not in the staging area  
 `--hard` completely roll back to the last commit without retaining any changes in the working directory and staging area
 
+**submodule**
+
+first time pull submodule
+
+```bash
+git submodule update --init --recursive
+```
+
