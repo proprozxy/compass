@@ -50,6 +50,14 @@ conda env export --name myenv > myenv.yml
 conda env create -f myenv.yml
 ```
 
+```bash
+conda list --explicit > spec-file.txt
+```
+
+```bash
+conda create --name myenv --file spec-file.txt
+```
+
 
 
 ### Package
