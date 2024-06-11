@@ -171,10 +171,17 @@ WireGuard provides an easy way to manage and create a VPN. It is also faster tha
    ifconfig # check for the client vpn ip address
    ```
 
-   Check ssh from another vpn client.
+   Check sshd.
 
    ```
-   sudo systemctl status ssh
+   sudo systemctl status sshd
+   # if not
+   sudo apt install openssh-server
+   ```
+
+   Check ssh from another vpn client
+
+   ```
    ssh ubuntu@10.8.0.2 # replace with username and client vpn ip
    # This checks if the peer-to-peer connection is forwarded by the vpn server.
    ```
