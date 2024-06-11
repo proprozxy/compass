@@ -1,6 +1,6 @@
-### ROS Usage
+# ROS Usage
 
-initialize
+**initialize**
 
 ```bash
 source /opt/ros/noetic/setup.bash
@@ -12,31 +12,31 @@ roscore
 
 open another terminal to run following tasks
 
-load config
+**load config**
 
 ```bash
 rviz -d rviz_config.rviz 
 ```
 
-play rosbag in loop
+**play rosbag in loop**
 
 ```bash
 rosbag play --loop /path/to/bag/file.bag
 ```
 
-check info
+**check info**
 
 ```bash
 rosbag info /path/to/bag/file.bag 
 ```
 
-print topic info
+**print topic info**
 
 ```bash
 rostopic echo /topic_name
 ```
 
-record
+**record**
 
 ```bash
 rosbag record -a -b 9086 --duration 30

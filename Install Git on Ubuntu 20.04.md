@@ -1,4 +1,4 @@
-## Install Git on Ubuntu 20.04
+# Install Git on Ubuntu 20.04
 
 Check whether Git is installed
 

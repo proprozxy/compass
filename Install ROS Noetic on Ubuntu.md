@@ -1,10 +1,10 @@
-## Install ROS Noetic on Ubuntu
+# Install ROS Noetic on Ubuntu
 
 *for ubuntu 20.04 lts*
 
 *official documentation: http://wiki.ros.org/noetic/Installation/Ubuntu*
 
-### Configure Ubuntu repositories
+## Configure Ubuntu repositories
 
 ```bash
 sudo add-apt-repository restricted
@@ -16,26 +16,26 @@ sudo add-apt-repository multiverse
 sudo apt update
 ```
 
-### Set up sources.list
+## Set up sources.list
 
 ```bash
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 ```
 
-### Set up keys
+## Set up keys
 
 ```bash
 sudo apt install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
-### Installation
+## Installation
 
 ```bash
 sudo apt update
 ```
 
-### Environment setup
+## Environment setup
 
 ```bash
 source /opt/ros/noetic/setup.bash
@@ -46,26 +46,26 @@ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### Install dependencies
+## Install dependencies
 
 ```bash
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
 
-### Initialize rosdep
+## Initialize rosdep
 
 ```bash
 sudo rosdep init
 rosdep update
 ```
 
-### Check
+## Check
 
 ```bash
 rosversion -d
 ```
 
-### Test
+## Test
 
 ```bash
 source /opt/ros/noetic/setup.bash
@@ -83,7 +83,7 @@ rosrun turtlesim turtlesim_node
 rosrun turtlesim turtle_teleop_key
 ```
 
-### Errors
+## Errors
 
 ```bash
 Preparing to unpack .../python3-catkin-pkg-modules_0.4.24-1_all.deb ...

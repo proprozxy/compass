@@ -1,8 +1,8 @@
-## WireGuard VPN Setup
+# WireGuard VPN Setup
 
 WireGuard provides an easy way to manage and create a VPN. It is also faster than traditional VPNs because it uses UDP rather than TCP. TCP relies on a consistent connection, so there is always a check if connection exists before it is being published. UDP does not require that check. The authentication part is taken care by private and public key matching. Meaning if a client has the server's public key and the server has the client's public key, an encrypted connection can be established. Refer to [WireGuard](https://www.wireguard.com/) for information on how to use private and public keys to authenticate connections and tunnels.
 
-### Setting up the server
+## Setting up the server
 
 1. Install wireguard desired to be the server.
 
@@ -91,7 +91,7 @@ WireGuard provides an easy way to manage and create a VPN. It is also faster tha
    sudo systemctl status wg-quick@wg0.service
    ```
 
-### Setting up the peer
+## Setting up the peer
 
 1. Generate the private and public keys of the peer.
 

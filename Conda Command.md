@@ -1,22 +1,6 @@
-## Conda Command
+# Conda Command
 
-*continuously updated*
-
-Some commonly used commands in Conda
-
-### Conda
-
-```bash
-conda --version
-```
-
-```bash
-conda update conda
-```
-
-
-
-### Env
+**Env**
 
 ```bash
 conda env list
@@ -58,9 +42,7 @@ conda list --explicit > spec-file.txt
 conda create --name myenv --file spec-file.txt
 ```
 
-
-
-### Package
+**Package**
 
 ```bash
 conda list

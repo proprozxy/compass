@@ -1,4 +1,4 @@
-## Git Usage
+# Git Usage
 
 **configuration**
 

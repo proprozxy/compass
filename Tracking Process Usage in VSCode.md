@@ -1,4 +1,4 @@
-## Tracking Process Usage in VSCode
+# Tracking Process Usage in VSCode
 
 to start a process with nohup and keep it running in the background
 

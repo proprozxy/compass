@@ -1,4 +1,4 @@
-## Install CUDA Toolkit in deb (network)
+# Install CUDA Toolkit in deb (network)
 
 Use [CUDA Toolkit 11.8 Downloads](https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_network) as an example, when you follow the instructions in **deb (network)**.
 
