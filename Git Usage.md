@@ -1,72 +1,81 @@
 # Git Usage
 
-**configuration**
-
+## Configuration
+To set up user information with github:
 ```bash
 git config --global user.name <username>
 git config --global user.email <email>
 git config --list
 ```
 
-**create new branch**
+## Common operations
 
+### Status check
+To check the current status of the repository:
+```bash
+git status
+```
+Use `git status uno` to ignore untracked files.
+
+### Branch management
+To create and switch to a new branch:
 ```bash
 git clone git@github.com:xxx.git -b base_branch
 git checkout -b new_branch
 git push -u origin new_branch
 ```
 
-**check status**
-
-```bash
-git status uno
-```
-
-use `git status uno` to ignore untracked files
-
-**generally push**
-
+### Commit changes
+Add changes and commit:
 ```bash
 git add <file>
 git commit -m "commit message"
 git push
 ```
+Use `git add .` to add all changes in the directory.
 
-can use `git add .` to add all files
+## Advanced operations
 
-**temporary storage**
-
+### Temporary storage
+To stash changes temporarily:
 ```bash
 git stash
 git stash pop
 ```
 
-**rollback commit**
-
-rollback last commit
-
+### Roll back changes
+To rollback the last commit:
 ```bash
 git revert HEAD
 git push
 ```
-
-go back to the specified commit and undo the commits after it
-
+To rollback to a specific commit and discard all changes after it:
 ```bash
 git log
 git reset --hard <commit hash>
 git push --force
 ```
+Modes of `git reset`:
+- `--soft`: Keeps the changes in the working directory.
+- `--mixed` (default): Retains changes in the working directory but not in the staging area.
 
-`git reset` has 3 modes
+### Submodule management
 
-`--soft` roll back to the last commit but keep changes to the working directory  
-`--mixed` (default) roll back to the last commit, retaining changes in the working directory, but not in the staging area  
-`--hard` completely roll back to the last commit without retaining any changes in the working directory and staging area
+Git submodules keep a git repository as a subdirectory of another git repository.  To add a submodule:
 
-**submodule**
+```bash
+git submodule add <repository-url>
+git submodule init
+```
 
-first time pull submodule
+To initialize and update the submodule:
+
+```bash
+git submodule init
+git submodule update
+```
+
+If the repository is with nested submodules:
 
 ```bash
 git submodule update --init --recursive
